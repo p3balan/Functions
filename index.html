@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<h2>Functions Assignment</h2>
+<body>
+    <p id="add"></p>
+
+    <p id="multiply"></p>
+
+    <p id="power"></p>
+
+    <p id="factor"></p>
+
+    <p id="fibonacci"></p>
+
+
+
+    <script>
+    
+    var sum = add(2,4);
+    document.getElementById("add").innerHTML = sum;
+
+    function add(a, b) {
+      return a + b;
+    }
+    console.log(sum)
+
+    function multiply(a,b){
+        var sum = 0
+        for (var i = 0; i< b; i++) {
+            add(a,sum)
+            sum = sum + a
+
+         }
+         return sum
+    }
+    console.log(multiply(6,8))
+
+    document.getElementById("multiply").innerHTML = (multiply(6,8));
+
+
+    function Power(a,b){
+        var sum = 1
+        for (var i = 0; i< b; i++) {
+            add(a,sum)
+            sum = sum * a
+
+         }
+         return sum
+    }
+    console.log(Power(2,8))
+    document.getElementById("power").innerHTML = (Power(2,8));
+
+    function Factor(a,b){
+        var sum = 24
+        for (var i = 0; i< b; i++) {
+            add(a,sum)
+            sum = sum / a
+
+         }
+         return sum
+    }
+    console.log(Factor())
+
+    document.getElementById("factor").innerHTML = (Factor(4));
+
+
+    function Fibonacci(b) {
+
+        var first = 0, second = 1, next = 1;
+
+        for(var i = 2; i <= b; i++) {
+            next = first + second;
+            second = first;
+            first = next;
+}
+        return next;
+    }
+    console.log(Fibonacci(8))
+    document.getElementById("fibonacci").innerHTML = (Fibonacci(8));
+
+
+    </script>
+    
+</body>
+</html>
